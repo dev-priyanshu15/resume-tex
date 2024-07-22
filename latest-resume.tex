@@ -1,0 +1,157 @@
+%-------------------------
+% Resume in LaTeX
+% Author : Priyanshu Singh
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % Clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generated PDF is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{\href{https://github.com/spriyanshucoder}{\Large Priyanshu Singh}} & Email: \href{mailto:s.priyanshu.coder@gmail.com}{s.priyanshu.coder@gmail.com}\\
+  \href{https://www.linkedin.com/in/priyanshu-singh-b20073257}{LinkedIn: priyanshu-singh} & Mobile: \href{tel:+919693271783}{+91-969-327-1783} \\
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {RNS Institute Of Technology}{Bangalore, India}
+      {B.E in Information Science and Engineering; CGPA: 8.3}{2022 -- 2026}
+  \resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------------
+\section{Technical Skills}
+  \resumeSubHeadingListStart
+    \item{
+      \textbf{Languages}{: C++, Python, Java, JavaScript, HTML, TypeScript} \\
+      \textbf{Database And Tools}{: MongoDB, PostgreSQL, Git, GitHub, Redis, Cloudinary, Socket.io} \\
+      \textbf{Frameworks And Libraries}{: Node.js, Material-UI, Bootstrap, Express.js, RESTful API, React, Redux,, Next.js, Tailwind CSS}
+    }
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+
+    \resumeSubItem{EduSphere}
+      {EduSphere is a placement preparation app that provides comprehensive study materials, including courses, assignments, source code, and more. The platform features an admin dashboard, user authentication, course management, payment processing, and a fully customizable admin interface. Built using \textbf{Next.js} and \textbf{TypeScript} for the frontend, and \textbf{Node.js}, \textbf{Express.js}, and \textbf{MongoDB} for the backend. Additionally, the app uses \textbf{Socket.io} for real-time communication, \textbf{Redis} for database management, and \textbf{Node.js} and \textbf{Express.js} for the backend. The admin panel allows complete control over course content and user data. \href{https://github.com/spriyanshucoder/EduSphere}{GitHub}}
+
+    \resumeSubItem{Social Media Blockchain App}
+      {A decentralized application (Dapp) designed for music artists and their audiences to interact securely and transparently. This project combines the \textbf{MERN stack} with blockchain technology to revolutionize social media engagement. Built using \textbf{MongoDB} for database management, \textbf{Express.js} and \textbf{Node.js} for the backend, and \textbf{React} and \textbf{Next.js} for the frontend, the application integrates blockchain technology to ensure secure and transparent interactions. The Dapp leverages \textbf{Ethereum} for smart contracts and decentralized data storage, providing a platform for artists to connect with their fans in a new and innovative way. This guide covers everything from setting up the development environment to integrating blockchain technology. \href{https://github.com/spriyanshucoder/Blockchain-Music-Social-Media-Dapp}{GitHub}}
+
+  \resumeSubItem{Flavor-Fusion-App}
+{A responsive recipe discovery and sharing platform built with \textbf{React}, \textbf{Redux}, and \textbf{Material-UI}, and hosted on \textbf{Vercel}. It features \textbf{User Accounts} for profile management, \textbf{Advanced Search} to find recipes, \textbf{Meal Planning Tools}, and an API integration for fetching recipes and displaying their ingredients. \href{https://github.com/spriyanshucoder/FlavorFusion-App}{GitHub}}
+
+    \resumeSubItem{AI-Image-Generator}
+      {A web application that leverages OpenAI's \textbf{DALL-E} model to generate images from textual descriptions provided by users. The application is developed using the \textbf{MERN stack} for robust backend and frontend functionality, with \textbf{React} and \textbf{Node.js} handling the user interface and server-side logic respectively. \textbf{Tailwind CSS} is utilized for modern and responsive design. For image storage and management, \textbf{Cloudinary} is employed to provide scalable and secure cloud-based image storage solutions. The integration of DALL-E enables dynamic image generation based on user input, offering a unique and interactive experience. \href{https://github.com/spriyanshucoder/AI-IMAGE-GENERATOR}{GitHub}}
+
+    \resumeSubItem{Redux-Shopping-App}
+      {A responsive e-commerce platform developed using \textbf{React}, \textbf{Redux}, and \textbf{Material-UI}, and hosted on \textbf{Vercel} for optimal performance. The application features comprehensive \textbf{user authentication} to securely manage user accounts, a \textbf{product catalog} for browsing and managing items, a \textbf{shopping cart} for adding and reviewing products, and a \textbf{seamless checkout process} to complete transactions efficiently. Additionally, it includes an \textbf{admin panel} for overseeing and managing products, orders, and user accounts, ensuring a streamlined administrative experience. \href{https://github.com/spriyanshucoder/Redux-Shopping-App}{GitHub}}
+
+    \resumeSubItem{Object-Detection}
+      {Implemented an object detection system using \textbf{Arduino} combined with \textbf{ultrasonic} or \textbf{infrared} sensors for detecting objects. The system includes motor control based on sensor inputs to facilitate movement and response. Advanced detection capabilities are achieved through the integration of a \textbf{camera module} and image processing libraries such as \textbf{OpenCV} for enhanced accuracy and functionality. This project demonstrates the application of sensors and image processing for real-time object detection. \href{https://github.com/spriyanshucoder}{GitHub}}
+
+  \resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------------
+\section{Achievements}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Techfest-Nov 2023, Bangalore}
+      {Placed Top 10 among 48 other teams in Techfest Coding Competition 2023}
+    \resumeSubItem{Top 10 Ambition 2024}
+      {Achieved Top 10 placement in Ambition 2024, a competition conducted by Bangalore Institute of Technology in July 2024}
+  \resumeSubHeadingListEnd
+
+%-----------HOBBIES-----------------
+\section{Hobbies}
+  \resumeSubHeadingListStart
+    \resumeSubItem{Open-Source Contribution}
+      {Participate in hackathons focused on open-source technologies, showcasing problem-solving skills, creativity, and the ability to collaborate effectively under pressure.}
+  \resumeSubHeadingListEnd
+
+\end{document}
