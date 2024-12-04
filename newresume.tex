@@ -1,0 +1,236 @@
+
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[pdftex]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={black},
+    citecolor={blue!50!black},
+    urlcolor={black}
+}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.530in}
+\addtolength{\evensidemargin}{-0.375in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.45in}
+\addtolength{\textheight}{1in}
+
+\urlstyle{rm}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%-----------------------------
+%%%%%%  CV STARTS HERE  %%%%%%
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+
+
+  \textbf{{\LARGE Priyanshu Singh}} & Email: \href{s.priyanshu.coder@gmail.com}{s.priyanshu.coder@gmail.com}\\
+  \underline{\href{https://dev-priyanshu-g4g8.vercel.app/}{Portfolio}} & \underline{\href{https://www.linkedin.com/in/priyanshu-singh-b20073257}{LinkedIn}} \\
+  \underline{\href{https://github.com/dev-priyanshu15}{Github: Priyanshu Singh}} & Mobile:~~~+91-969-327-1783 
+\end{tabular*}
+
+%-----------EDUCATION-----------------
+
+	    
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+        {RNS Institute Of Technology}{CGPA: 8.3}
+      {Bachelor of Engineering-Information Science And Engineering}{2022 - 2026}
+      \vspace{-5pt}
+    \resumeSubHeadingListEnd
+	    
+\vspace{-5pt}
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C++, Python, Java, JavaScript, TypeScript, Golang}
+     
+    \textbf{Technologies/Frameworks}{: React, Redux, Next.js, Node.js, Express.js, Material-UI, Bootstrap, Tailwind CSS, GraphQL, RESTful API}
+     
+     \textbf{Databases/Tools}{: MongoDB, PostgreSQL, Redis, Cloudinary, Git, GitHub, CI/CD, Docker, AWS, GitOps,  Socket.io, Linux}
+    }}
+ \end{itemize}
+ \vspace{-10pt}
+%-----------Open Source-----------------
+
+%-----------Experience-----------------
+\section{Experience and Open Source}
+\resumeSubHeadingListStart
+
+  \resumeSubheading
+  {\href{https://hacktoberfest.digitalocean.com/}{\underline{Hacktoberfest}}}{October 2024-Nov 2024}
+  {Contributor: Open Source}{Remote}
+  \resumeItemListStart
+  \item Contributed to multiple open-source projects, fixing bugs and adding features in \textbf{React}, \textbf{Node.js}, and \textbf{Python}.
+  \item Enhanced documentation and improved the user experience for popular open-source repositories.
+  \item Collaborated with maintainers and community members through GitHub, adhering to best practices in version control and code quality.
+  \resumeItemListEnd
+
+  \resumeSubheading
+  {\href{https://gssoc.in/}{\underline{GSSoC}}}{ October 2024-Present}
+  {Contributor: Open Source}{Remote}
+  \resumeItemListStart
+  \item Participated in the Google Summer of Code (GSSoC) as a contributor to \textit{FOSS} organizations, focusing on \textbf{Web Development} and \textbf{Backend Development}.
+  \item Worked on various projects, contributing code for new features, bug fixes, and refactoring the existing codebase.
+  \item Gained experience in collaborating with global teams and working with GitHub workflows in open-source environments.
+  \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+% Projects
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeSubItem{\textbf{EduSphere} $|$ \emph{Next.js, TypeScript, Node.js, Express.js, MongoDB}
+$|$
+\textmd{\href{https://github.com/dev-priyanshu15/placement-preparation-app}{\underline{GitHub}}}
+}{
+\begin{itemize}
+\item Developed a placement prep app with courses and assignments using \textit{Next.js}, \textit{TypeScript}, \textit{Node.js}, and \textit{MongoDB}.
+\item Integrated secure authentication, payment processing, and an admin dashboard for managing users and content.
+\item Implemented real-time notifications and updates to keep users engaged with new courses and assignments.
+\item Designed a flexible backend for scalability, ensuring the app can handle large user loads and requests.
+\end{itemize}
+}
+
+\vspace{-10pt}
+
+\resumeSubItem{\textbf{Music Blockchain App} $|$ \emph{MERN, Smart Contracts, Blockchain}
+$|$
+\textmd{\href{https://github.com/dev-priyanshu15/blockchain}{\underline{GitHub}}}
+}{
+\begin{itemize}
+\item Built a decentralized music platform using \textit{MERN} and \textit{Ethereum Smart Contracts} for secure interactions.
+\item Designed features for content sharing, ratings, and secure blockchain-backed user engagement.
+\item Integrated a token-based system for incentivizing content creators and users through rewards.
+\item Ensured transparency in transactions by leveraging blockchain, allowing users to verify and track interactions.
+\end{itemize}
+}
+
+\vspace{-10pt}
+
+\resumeSubItem{\textbf{Neighborhood News App} $|$ \emph{React, Node.js, Express.js, MongoDB}
+$|$
+\textmd{\href{https://github.com/dev-priyanshu15/news-app}{\underline{GitHub}}}
+}{
+\begin{itemize}
+\item Developed a local news app using \textit{React} and \textit{Node.js} for dynamic content and real-time updates.
+\item Implemented secure user authentication for content submission and management.
+\item Built a scalable database schema in \textit{MongoDB} for efficient news article storage and retrieval.
+\item Optimized the app for performance, ensuring fast loading times even with large volumes of data.
+\end{itemize}
+}
+
+\vspace{-10pt}
+
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+
+
+
+
+
+
+%-----------Awards-----------------
+\section{Achievements}
+\begin{description}[font=$\bullet$]
+\item {Placed 1st in \textbf{Ambition Hackathon June 2024} - National Level Hackathon at BIT Bangalore.}
+\vspace{-5pt}
+\item {Placed 3rd in \textbf{CypherQuest Hackathon Juner 2024} - Dayananda Sagar Academy of Technology.}
+\vspace{-5pt}
+\item {Placed 3rd in \textbf{Almatron Hackathon June 2024} - Global Academy of Technology.}
+\vspace{-5pt}
+\item {Participated in \textbf{TechFest November 2023} - National Level Hackathon.}
+\end{description}
+
+
+
+
+% %-----------LICENSE AND CERTIFICATIONS-----------------
+
+
+\vspace{-5pt}
+
+
+
+\end{document}
